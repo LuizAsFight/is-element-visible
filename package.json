@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuizAsFight/true-visibility.git"
+    "url": "git+https://github.com/LuizAsFight/is-element-visible.git"
   },
   "keywords": [
     "html",
@@ -22,9 +22,9 @@
   "author": "Luiz Felipe Bolsoni Gomes <felipebolsonigomes@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LuizAsFight/true-visibility/issues"
+    "url": "https://github.com/LuizAsFight/is-element-visible/issues"
   },
-  "homepage": "https://github.com/LuizAsFight/true-visibility#readme",
+  "homepage": "https://github.com/LuizAsFight/is-element-visible#readme",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
