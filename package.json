@@ -1,7 +1,7 @@
 {
   "name": "is-element-visible",
   "version": "1.0.1",
-  "description": "Check whether HTML element is visible or not",
+  "description": "Check whether HTML element is visible or not, supposed to cover all caveats (display, visibility, opacity, parent's overflow)",
   "main": "dist/main.js",
   "scripts": {
     "build": "webpack",
