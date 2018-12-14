@@ -1,6 +1,6 @@
 {
   "name": "is-element-visible",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check whether HTML element is visible or not",
   "main": "dist/main.js",
   "scripts": {
