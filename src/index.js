@@ -18,12 +18,14 @@ const isVisibleDueToOverflow = (el, parentEl) => {
   const elPositioning = getPositioning(el.getBoundingClientRect());
 
   while (el = el.parentNode) {
-    const parentElPositioning = getPositioning(el.getBoundingClientRect());
+    if (el.nodeType !== 9 && isOverflowHidden(el)) {
+      const parentElPositioning = getPositioning(el.getBoundingClientRect());
 
-    const isElInsideParentRectX = ( elPositioning.startX >= parentElPositioning.startX && elPositioning.endX <= parentElPositioning.endX );
-    const isElInsideParentRectY = ( elPositioning.startY >= parentElPositioning.startY && elPositioning.endY <= parentElPositioning.endY );
-
-    if (!isElInsideParentRectX || !isElInsideParentRectY) return false;
+      const isElInsideParentRectX = ( elPositioning.startX >= parentElPositioning.startX && elPositioning.endX <= parentElPositioning.endX );
+      const isElInsideParentRectY = ( elPositioning.startY >= parentElPositioning.startY && elPositioning.endY <= parentElPositioning.endY );
+  
+      if (!isElInsideParentRectX || !isElInsideParentRectY) return false;
+    }
   }
 
   return true;
