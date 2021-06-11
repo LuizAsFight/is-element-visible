@@ -9,8 +9,9 @@ const getComputedStyle = (el, property) => {
     : computedStyle;
 }
 const isOnDocument = el => {
+  const ownerDocument = el.ownerDocument;
   while (el = el.parentNode) {
-    if (el == document) return true;
+    if (el == ownerDocument) return true;
   }
   return false;
 };
